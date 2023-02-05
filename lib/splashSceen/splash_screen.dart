@@ -1,6 +1,10 @@
 import 'dart:async';
 
+import 'package:cabapp/authentication/login_screen.dart';
+
+import 'package:cabapp/global/global.dart';
 import 'package:cabapp/mainScreens/main_screen.dart';
+
 import 'package:flutter/material.dart';
 
 class MySplashScreen extends StatefulWidget {
@@ -13,11 +17,20 @@ class MySplashScreen extends StatefulWidget {
 class _MySplashScreenState extends State<MySplashScreen> {
   startTimer() {
     Timer(const Duration(seconds: 3), () async {
-      Navigator.push(context, MaterialPageRoute(
-        builder: (context) {
-          return const MainScreen();
-        },
-      ));
+      if (fAuth.currentUser != null) {
+        currentFirebaseUser = fAuth.currentUser;
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) {
+            return MainScreen();
+          },
+        ));
+      } else {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) {
+            return LoginScreen();
+          },
+        ));
+      }
     });
   }
 

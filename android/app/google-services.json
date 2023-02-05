@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191584548678",
+    "project_id": "uber-ola-and-indriver-90f69",
+    "storage_bucket": "uber-ola-and-indriver-90f69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191584548678:android:7842e6323f9cca3bbbd747",
+        "android_client_info": {
+          "package_name": "com.example.cabapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191584548678-l2tpdum81sklh6cqkgkj0b3uno5gtrpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMv33J_Wnqh00uJHYk58b6614ScnZC4Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191584548678-l2tpdum81sklh6cqkgkj0b3uno5gtrpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 
-class RatingTabScreen extends StatelessWidget {
-  const RatingTabScreen({super.key});
+
+class RatingsTabPage extends StatefulWidget {
+  const RatingsTabPage({Key? key}) : super(key: key);
 
   @override
+  _RatingsTabPageState createState() => _RatingsTabPageState();
+}
+
+class _RatingsTabPageState extends State<RatingsTabPage> {
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text('Rating Tab Screen')),
+    return Center(
+      child: Text(
+        "Ratings"
+      ),
     );
   }
 }
